@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    opengdv (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.4.2)
+    yard (0.8.7.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  opengdv!
+  rake
+  yard

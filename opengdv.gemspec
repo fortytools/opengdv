@@ -19,11 +19,11 @@ OpenGDV ist eine Bibliothek zum Lesen von Dateien im GDV Format
 Versicherungsverträge, Kunden, und andere versicherungsrelevante Details.
 EOF
 
+  s.files         = `git ls-files -z`.split("\x0")
+
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
-
-  s.files         = `git ls-files -z`.split("\x0")
 
   s.add_development_dependency 'yard'
   s.add_development_dependency 'rake'
